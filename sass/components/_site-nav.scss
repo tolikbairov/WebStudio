@@ -1,5 +1,9 @@
 .nav__site-nav {
+  /* display: none; */
   @include centered__flex;
+}
+.site-nav {
+  display: none;
 }
 .site-nav__item {
   &:not(:last-child) {
