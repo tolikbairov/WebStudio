@@ -4,24 +4,67 @@
   background-color: $secondary-bg-color;
 }
 .footer-layout {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  margin-bottom: -60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px - $padding-container-left;
+    padding-right: 89px - $padding-container-right;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer__logo {
+  /*   margin-left: auto;
+  margin-right: auto; */
+  /* text-align: center; */
   margin-bottom: 20px;
 }
 .logo__text--color--white {
   color: $primary-white-color;
 }
 .footer__column--left {
-  margin-right: 70px;
+  /*   margin-right: 70px; */
+  /*   margin-bottom: 60px; */
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+.footer__column {
+  margin-bottom: 60px;
 }
 .footer__column--middle {
-  margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    padding-top: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
+  /* margin-right: auto; */
+}
+.footer__column--right {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding-top: 12px;
+  }
+  /* margin-right: auto; */
+}
+.footer__social {
+  /*   @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  } */
 }
 .footer__social,
 .footer__subscribe {
-  padding-top: 12px;
+  /*   padding-top: 12px; */
 }
 .footer__join-text {
   display: block;
@@ -29,4 +72,33 @@
   color: $primary-white-color;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.footer__subscription-form {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include centered__flex;
+    width: 570px;
+    /* min-width: 450px; */
+  }
+  /*   margin-left: auto; */
+}
+
+/*  @include centered__flex; */
+
+.footer__sub-field {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    /* min-width: 450px; */
+  }
+  /* margin-right: 12px; */
+  /*  @include centered__flex; */
+}
+.footer__sub-button {
+  margin: 0 auto;
 }

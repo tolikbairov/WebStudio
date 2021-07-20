@@ -93,7 +93,7 @@
 
     <main>
       <!-- Заказать услугу -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button
@@ -104,10 +104,10 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Особенности -->
-    <section class="section section--no-btm-padding">
+      <section class="section section--no-btm-padding">
         <div class="container">
           <ul class="feature-list list">
             <li class="feature-list__item">
@@ -168,17 +168,21 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
-     <!--  Чем мы занимаемся --> 
-      <!-- <section class="section">
+      <!--  Чем мы занимаемся -->
+      <section class="section section--hidden">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="service-list list">
             <li class="service-list__item">
               <div class="service-card">
                 <img
-                  src="./images/programer-working-his-desk-office.jpg"
+                  srcset="
+                    ./images/service-desktop.jpg    1x,
+                    ./images/service-desktop-2x.jpg 2x
+                  "
+                  src="./images/service-desktop.jpg"
                   alt="программист работает за столом в офисе"
                   width="370"
                   class="service-card__image"
@@ -191,7 +195,11 @@
             <li class="service-list__item">
               <div class="service-card">
                 <img
-                  src="./images/web-ui-designers-are-developing-application-smartphones.jpg"
+                  srcset="
+                    ./images/service-mobile-app.jpg    1x,
+                    ./images/service-mobile-app-2x.jpg 2x
+                  "
+                  src="./images/service-mobile-app.jpg"
                   alt="веб-дизайнеры пользовательского интерфейса разрабатывают приложения для смартфонов"
                   width="370"
                   class="service-card__image"
@@ -204,7 +212,11 @@
             <li class="service-list__item">
               <div class="service-card">
                 <img
-                  src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg"
+                  srcset="
+                    ./images/service-design.jpg    1x,
+                    ./images/service-design-2x.jpg 2x
+                  "
+                  src="./images/service-design.jpg"
                   alt="веб-дизайнер работает с графическим планшетом для выбора цвета"
                   width="370"
                   class="service-card__image"
@@ -216,12 +228,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Команда -->
 
-
-      <!-- <section class="section section--bg-color--gray">
+      <section class="section section--bg-color--gray">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -229,11 +240,34 @@
             <li class="team-list__item">
               <div class="team-card">
                 <div class="team-card__thumb">
-                  <img
-                    src="./images/product-designer-igor.jpg"
-                    alt="промышленный дизайнер Игорь Демьяненко"
-                    class="team-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/product-designer-igor-desktop-2x.jpg 2x,
+                        ./images/product-designer-igor-desktop.jpg    1x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/product-designer-igor-tablet-2x.jpg 2x,
+                        ./images/product-designer-igor-tablet.jpg    1x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/product-designer-igor-mob-2x.jpg 2x,
+                        ./images/product-designer-igor-mob.jpg    1x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/product-designer-igor.jpg"
+                      alt="промышленный дизайнер Игорь Демьяненко"
+                      class="team-card__image"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__about">
                   <h3 class="team-card__name">Игорь Демьяненко</h3>
@@ -274,11 +308,35 @@
             <li class="team-list__item">
               <div class="team-card">
                 <div class="team-card__thumb">
-                  <img
-                    src="./images/frontend-developer-olga.jpg"
-                    alt="фронтенд-разработчик Ольга Репина"
-                    class="team-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/frontend-developer-olga-desktop-2x.jpg 2x,
+                        ./images/frontend-developer-olga-desktop.jpg    1x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/frontend-developer-olga-tablet-2x.jpg 2x,
+                        ./images/frontend-developer-olga-tablet.jpg    1x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/frontend-developer-olga-mob-2x.jpg 2x,
+                        ./images/frontend-developer-olga-mob.jpg    1x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/frontend-developer-olga.jpg"
+                      alt="фронтенд-разработчик Ольга Репина"
+                      class="team-card__image"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__about">
                   <h3 class="team-card__name">Ольга Репина</h3>
@@ -319,11 +377,35 @@
             <li class="team-list__item">
               <div class="team-card">
                 <div class="team-card__thumb">
-                  <img
-                    src="./images/marketing-nikolai.jpg"
-                    alt="маркетолог Николай Тарасов"
-                    class="team-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/marketing-nikolai-desktop-2x.jpg 2x,
+                        ./images/marketing-nikolai-desktop.jpg    1x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-nikolai-tablet-2x.jpg 2x,
+                        ./images/marketing-nikolai-tablet.jpg    1x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-nikolai-mob-2x.jpg 2x,
+                        ./images/marketing-nikolai-mob.jpg    1x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/marketing-nikolai.jpg"
+                      alt="маркетолог Николай Тарасов"
+                      class="team-card__image"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__about">
                   <h3 class="team-card__name">Николай Тарасов</h3>
@@ -364,11 +446,35 @@
             <li class="team-list__item">
               <div class="team-card">
                 <div class="team-card__thumb">
-                  <img
-                    src="./images/ui-designer-michael.jpg"
-                    alt="дизайнер пользовательского интерфейса Михаил Ермаков"
-                    class="team-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/ui-designer-michael-desktop-2x.jpg 2x,
+                        ./images/ui-designer-michael-desktop.jpg    1x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/ui-designer-michael-tablet-2x.jpg 2x,
+                        ./images/ui-designer-michael-tablet.jpg    1x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/ui-designer-michael-mob-2x.jpg 2x,
+                        ./images/ui-designer-michael-mob.jpg    1x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/ui-designer-michael.jpg"
+                      alt="дизайнер пользовательского интерфейса Михаил Ермаков"
+                      class="team-card__image"
+                    />
+                  </picture>
                 </div>
                 <div class="team-card__about">
                   <h3 class="team-card__name">Михаил Ермаков</h3>
@@ -409,63 +515,63 @@
           </ul>
         </div>
       </section>
-    </main>
-    <section class="section">
-      <div class="container client-box">
-        <h2 class="section-title client-box__section-title">
-          Постоянные клиенты
-        </h2>
-        <ul class="client-list list">
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-ya-and-co"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-tag-line-here"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-company"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-peters"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-brand"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="client-list__item">
-            <a href="" class="client-list__link link"
-              ><svg class="client-list__icon">
-                <use href="./images/icons.svg#icon-tag-line"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
 
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title client-box__section-title">
+            Постоянные клиенты
+          </h2>
+          <ul class="client-list list">
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-ya-and-co"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-tag-line-here"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-peters"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-list__item">
+              <a href="" class="client-list__link link"
+                ><svg class="client-list__icon">
+                  <use href="./images/icons.svg#icon-tag-line"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-layout">
-          <div class="footer__column--left">
+          <div class="footer__column footer__column--left">
             <a href="./index.html" class="logo footer__logo">
               <span class="logo__text logo__text--color--accent">Web</span
               ><span class="logo__text logo__text--color--white">Studio</span>
@@ -480,7 +586,7 @@
               >
             </address>
           </div>
-          <div class="footer__column--middle">
+          <div class="footer__column footer__column--middle">
             <div class="footer__social">
               <b class="footer__join-text">присоеденяйтесь</b>
               <ul class="social-list list footer__social-list">
@@ -546,11 +652,11 @@
               </ul>
             </div>
           </div>
-          <div class="footer__column--right">
+          <div class="footer__column footer__column--right">
             <div class="footer__subscribe">
               <b class="footer__join-text">подпишитесь на рассылку</b>
-              <form class="subscription-form">
-                <label class="subscription-form__field">
+              <form class="subscription-form footer__subscription-form">
+                <label class="subscription-form__field footer__sub-field">
                   <input
                     type="email"
                     name="email"
@@ -563,6 +669,7 @@
                     subscription-form__button
                     button
                     sub-button
+                    footer__sub-button
                     button--big
                   "
                   type="submit"
@@ -577,10 +684,9 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-
-    <!--     <div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-modal__button" data-modal-close>
           <svg class="close-modal__icon">
@@ -668,7 +774,7 @@
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

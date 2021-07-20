@@ -10,20 +10,40 @@
   display: flex;
   align-items: center;
   height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 .page-header__nav {
   width: 100%;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
   /*   @include centered__flex; */
 }
 .page-header__logo {
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
   /*   margin-right: 93px; */
 }
 .page-header__contact {
   display: none;
-  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    @include centered__flex;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   /* height: 100%; */
 }
@@ -43,6 +63,9 @@
   width: 40px;
   height: 40px;
   background-color: $primary-white-color;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .page-header__icon--open-menu {
   width: 100%;

@@ -1,9 +1,11 @@
 .nav__site-nav {
   /* display: none; */
-  @include centered__flex;
 }
 .site-nav {
   display: none;
+  @media screen and (min-width: 768px) {
+    @include centered__flex;
+  }
 }
 .site-nav__item {
   &:not(:last-child) {

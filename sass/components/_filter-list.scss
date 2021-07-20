@@ -1,11 +1,23 @@
 .filter-list {
-  @include centered__flex;
-  margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px - 15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px - 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px - 15px;
+  }
 }
 .filter-list__item {
   display: inline-block;
+  margin-bottom: 15px;
   &:not(:last-child) {
-    margin-right: 9px;
+    margin-right: 8px;
   }
 }
 

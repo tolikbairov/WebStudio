@@ -1,5 +1,6 @@
 .agreement-checkbox {
   @include centered__flex;
+  justify-content: left;
   cursor: pointer;
 }
 
@@ -19,13 +20,14 @@
 
 .agreement-checkbox__icon {
   display: inline-block;
+  min-width: 16px;
   width: 16px;
   height: 15px;
 
   /*   background-image: url("../images/check.svg"); */
   border: 2px solid $title-text-color;
   border-radius: 2px;
-  margin-right: 7px;
+  margin-right: 8px;
   transition: background-color $trans-time $cubic-const;
   .agreement-checkbox__input:checked + & {
     border: 0;
@@ -37,9 +39,21 @@
 }
 
 .agreement-checkbox__text {
+  font-size: 12px;
+  line-height: 1.14;
   user-select: none;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
 .agreement-checkbox__link {
+  font-size: 12px;
+  line-height: 1.14;
   color: $accent-color;
   text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71px;
+  }
 }
