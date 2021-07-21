@@ -21,6 +21,12 @@ select,
 textarea {
   font-family: $main-font-family;
 }
+main {
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+}
 .button {
   cursor: pointer;
   border-radius: 4px;

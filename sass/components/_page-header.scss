@@ -1,5 +1,10 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: $primary-white-color;
 }
 .page-header__layout {
   /*   @include centered__flex;
